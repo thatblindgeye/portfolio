@@ -1,0 +1,49 @@
+@use '../abstracts/' as *;
+
+/* light primary: 500 tonal range */
+/* light primary-variant: +/- 200 of primary */
+/* light secondary: 500 tonal range */
+/* light secondary-variant: +/- 200 of primary */
+
+$light: (
+  color-bg-accessibility-bar: color($yellow, 200),
+  color-bg-alert: mix(color($yellow, 200), white, 20%),
+  color-bg-base: color($neutral, 50),
+  color-bg-footer: color($yellow, 100),
+  color-bg-header: color($yellow, 200),
+  color-bg-modal: color($neutral, 900, 0.5),
+  color-bg-nav-hover: color($yellow, 700),
+  color-border-btn-focus: color($yellow, 900, 0.75),
+  color-border-divider: color($purple, 800, 0.5),
+  color-border-input: color($purple, 800, 0.4),
+  color-border-input-focus: color($purple, 800),
+  color-border-primary: color($purple, 800),
+  color-border-switch: color($neutral, 900, 0.5),
+  color-button-contained: color($yellow, 300),
+  color-button-contained-focus: color($yellow, 600),
+  color-button-delete: rgb(158, 0, 0),
+  color-button-delete-border: rgba(126, 0, 0, 0.6),
+  color-button-outline: color($purple, 900, 0.3),
+  color-button-outline-focus: color($purple, 900),
+  color-button-text: color($neutral, 850),
+  color-button-text-border: color($neutral, 900, 0.6),
+  color-link-border: color($neutral, 900, 0.6),
+  color-link-hover: color($yellow, 900),
+  color-link-unvisited: rgb(20, 20, 255),
+  color-link-visited: rgb(116, 0, 194),
+  color-message-error: rgb(128, 0, 0),
+  color-message-info: rgb(71, 167, 245),
+  color-message-success: rgb(76, 175, 80),
+  color-message-warning: rgb(255, 236, 61),
+  color-outline-focus-primary: color($neutral, 900, 0.6),
+  color-text-contained-button: color($neutral, 700),
+  color-text-inverted: color($neutral, 75),
+  color-text-item-warning: rgb(200, 0, 0),
+  color-text-logo: color($purple, 800),
+  color-text-msg-error: color($neutral, 50),
+  color-text-msg-info: color($neutral, 900),
+  color-text-msg-success: color($neutral, 900),
+  color-text-msg-warning: color($neutral, 800),
+  color-text-primary: color($purple, 600),
+  color-text-primary-disabled: color($neutral, 850, $disabled),
+);
