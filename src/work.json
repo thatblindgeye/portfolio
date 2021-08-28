@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "A short description about this project.",
+      "images": ["image1", "image2"],
+      "github": "url1",
+      "demo": "url2"
+    }
+  ],
+  "contributions": [
+    {
+      "name": "Contribution Name",
+      "link": "url",
+      "description": "A short description about this contribution.",
+      "list": ["List item", "List item"]
+    }
+  ]
+}
