@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Accessibility from './components/Accessibility/Accessibility';
+import Router from './components/Router/Router';
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
+  const topOfPageRef = useRef(null);
 
   // Initialize theme from local storage or set theme in local storage
   // when component mounts
@@ -30,7 +33,15 @@ export default function App() {
   };
 
   return (
-    <div>
-    </div>
+    <>
+      <header>
+        <Accessibility
+          siteTheme={theme}
+          themeToggle={handleThemeToggle}
+          topOfPageRef={topOfPageRef}
+        />
+      </header>
+      <Router />
+    </>
   );
 }
