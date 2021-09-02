@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Accessibility from './components/Accessibility/Accessibility';
+import HeaderNavbar from './components/Navigation/HeaderNavbar';
 import Router from './components/Router/Router';
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
           themeToggle={handleThemeToggle}
           topOfPageRef={topOfPageRef}
         />
+        <HeaderNavbar />
       </header>
       <Router />
     </>
