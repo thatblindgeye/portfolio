@@ -43,7 +43,7 @@ export default function App() {
         />
         <HeaderNavbar />
       </header>
-      <Router />
+      <Router theme={theme} />
     </>
   );
 }

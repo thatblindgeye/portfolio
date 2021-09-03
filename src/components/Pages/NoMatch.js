@@ -10,7 +10,7 @@ export default function NoMatch() {
       <h1>Page Not Found</h1>
       <p>
         Sorry, this page doesn't exist. Although, if it doesn't exist, then how
-        am I telling you this?
+        am I telling you this...
       </p>
     </div>
   );
