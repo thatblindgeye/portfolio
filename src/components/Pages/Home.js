@@ -11,10 +11,10 @@ export default function Home() {
       <Logo />
       <div className='home-info'>
         <p className='home-info__name'>Eric Olkowski</p>
-        <p className='home-info__title'>Front-end Developer</p>
+        <p className='home-info__title'>Front-End Developer</p>
         <div className='home-info__contact'>Link1 Link2 Link3</div>
         <p className='home-info__description'>
-          I create websites and apps with an accessible and responsive approach.
+          I develop things: web things, accessible things, responsive things.
         </p>
         <p className='home-info__pun'>N-eyes of you to stop by!</p>
       </div>

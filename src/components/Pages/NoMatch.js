@@ -7,10 +7,10 @@ export default function NoMatch() {
 
   return (
     <div>
-      <h1>Critical Miss!</h1>
+      <h1>Page Not Found</h1>
       <p>
-        This page does not exist. Try clicking one of the active links on the
-        page.
+        Sorry, this page doesn't exist. Although, if it doesn't exist, then how
+        am I telling you this?
       </p>
     </div>
   );
