@@ -19,7 +19,7 @@ export default function MobileNav({
       >
         <MenuIcon className='nav-button__icon' />
       </button>
-      {hidden ? null : <div className='header-nav-mask'></div>}
+      <div className={`header-nav-mask ${hidden ? 'hidden-mask' : ''}`}></div>
       <div className={`header-nav-container ${hidden ? 'hidden-nav' : ''}`}>
         <button
           className='nav-button'

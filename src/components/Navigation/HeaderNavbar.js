@@ -15,17 +15,19 @@ export default function HeaderNavbar() {
   };
 
   useEffect(() => {
-    function closeOnEscape(e) {
-      if (e.key === 'Escape' && !isHidden) {
-        handleMenuToggle();
+    function handleAltMenuClose(e) {
+      if (
+        (openMenuRef.current && e.key === 'Escape') ||
+        // Extra space must be kept at end due to conditional class name
+        e.target.className === 'header-nav-mask '
+      ) {
+        setIsHidden(true);
+        openMenuRef.current.focus();
       }
     }
-    window.addEventListener('keydown', closeOnEscape);
-
-    return () => {
-      window.removeEventListener('keydown', closeOnEscape);
-    };
-  });
+    window.addEventListener('keydown', handleAltMenuClose);
+    window.addEventListener('click', handleAltMenuClose);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,10 +40,6 @@ export default function HeaderNavbar() {
 
     handleResize();
     window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
   }, []);
 
   useEffect(() => {
@@ -72,6 +70,12 @@ export default function HeaderNavbar() {
         item.setAttribute('tabIndex', '-1');
       }
     });
+  }, [isHidden]);
+
+  useEffect(() => {
+    !isHidden
+      ? document.body.classList.add('menu-open')
+      : document.body.classList.remove('menu-open');
   }, [isHidden]);
 
   return isMobile ? (

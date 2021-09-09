@@ -9,10 +9,18 @@ body {
   background-color: var(--color-bg-base);
   color: var(--color-text-primary);
   min-height: 100vh;
+  overflow-x: hidden;
+
+  &.menu-open {
+    overflow-y: scroll;
+    position: fixed;
+    inset: 0;
+  }
 }
 
 header {
   background-color: var(--color-bg-header);
+  padding: 10px;
 }
 
 main {
