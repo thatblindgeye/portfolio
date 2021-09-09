@@ -1,0 +1,26 @@
+@use '../abstracts/' as *;
+
+.nav-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+
+  @include at-least(tablet-portrait) {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

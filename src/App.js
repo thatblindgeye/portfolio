@@ -37,12 +37,14 @@ export default function App() {
   return (
     <>
       <header>
-        <Accessibility
-          siteTheme={theme}
-          themeToggle={handleThemeToggle}
-          topOfPageRef={topOfPageRef}
-        />
-        <HeaderNavbar />
+        <div className='header-container'>
+          <Accessibility
+            siteTheme={theme}
+            themeToggle={handleThemeToggle}
+            topOfPageRef={topOfPageRef}
+          />
+          <HeaderNavbar />
+        </div>
       </header>
       <Router theme={theme} />
       <Footer topRef={topOfPageRef} />

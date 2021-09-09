@@ -19,20 +19,21 @@ export default function NavLinks({ navClass, navLabel, closeMenu }) {
 
   return (
     <nav className={navClass} aria-label={navLabel}>
-      <ul role='list'>
+      <ul className={`${navClass}-list`} role='list'>
         {links.map((link, index) => {
           const { path, name } = link;
           return (
-            <li key={index}>
+            <li key={index} className={`${navClass}-list__item`}>
               <Link
                 to={path}
-                className={`header-link ${
+                className={`${navClass}-link ${
                   activeLink === path ? 'active-link' : ''
                 }`}
                 onClick={closeMenu}
               >
                 {name}
               </Link>
+              <div className={`${navClass}-link__border`}></div>
             </li>
           );
         })}

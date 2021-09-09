@@ -1,5 +1,7 @@
+@use '../abstracts/' as *;
+
 .header-nav-mask {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--color-bg-modal-mask);
   position: fixed;
   top: 0;
   right: 0;
@@ -10,13 +12,13 @@
 }
 
 .hidden-mask {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   right: 100%;
 }
 
 .header-nav-container {
-  background-color: rgb(255, 0, 0);
-  max-width: 200px;
+  background-color: var(--color-bg-modal);
+  max-width: 250px;
   position: fixed;
   top: 0;
   right: 0;
@@ -28,4 +30,8 @@
 
 .hidden-nav {
   right: -100%;
+}
+
+.header-nav-list__item {
+  position: relative;
 }

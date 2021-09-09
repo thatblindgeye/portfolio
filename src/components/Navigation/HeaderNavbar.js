@@ -31,7 +31,7 @@ export default function HeaderNavbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (document.documentElement.offsetWidth <= 600) {
+      if (document.documentElement.offsetWidth <= 599) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
@@ -44,7 +44,7 @@ export default function HeaderNavbar() {
 
   useEffect(() => {
     const navItems = Array.from(
-      document.querySelectorAll('.header-nav-container > button, .header-nav a')
+      document.querySelectorAll('.header-nav-container button, .header-nav a')
     );
     const focusableItems = Array.from(
       document.querySelectorAll('button, a, [role="checkbox"]')

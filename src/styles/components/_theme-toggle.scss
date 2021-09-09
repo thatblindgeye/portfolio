@@ -1,0 +1,21 @@
+.theme-toggle {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: max-content;
+  padding: 10px;
+
+  &:focus,
+  &:hover {
+    background-color: var(--color-bg-header-item);
+  }
+
+  &:focus {
+    border: 1px dotted var(--color-border-primary);
+  }
+}
+
+.theme-icon {
+  --base-size: 1.5rem;
+  height: var(--base-size);
+  width: var(--base-size);
+}

@@ -19,16 +19,23 @@ export default function MobileNav({
       >
         <MenuIcon className='nav-button__icon' />
       </button>
+
       <div className={`header-nav-mask ${hidden ? 'hidden-mask' : ''}`}></div>
-      <div className={`header-nav-container ${hidden ? 'hidden-nav' : ''}`}>
-        <button
-          className='nav-button'
-          aria-label='close navigation menu'
-          onClick={toggleMenu}
-          ref={closeMenuRef}
-        >
-          <CloseIcon className='nav-button__icon' />
-        </button>
+      <div
+        className={`header-nav-container elevation-16dp ${
+          hidden ? 'hidden-nav' : ''
+        }`}
+      >
+        <div className='nav-button-container'>
+          <button
+            className='nav-button'
+            aria-label='close navigation menu'
+            onClick={toggleMenu}
+            ref={closeMenuRef}
+          >
+            <CloseIcon className='nav-button__icon' />
+          </button>
+        </div>
         {children}
       </div>
     </>

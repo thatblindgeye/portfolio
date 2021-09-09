@@ -9,7 +9,7 @@ export default function Accessibility({
 }) {
   return (
     <div className='a11y-container'>
-      <a href='#main' className='skip-link' ref={topOfPageRef}>
+      <a href='#content' className='skip-link' ref={topOfPageRef}>
         Skip to Content
       </a>
       <div

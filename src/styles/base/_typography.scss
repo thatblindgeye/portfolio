@@ -1,5 +1,25 @@
 @use '../abstracts' as *;
 
 body {
+  color: var(--color-text-primary);
   font-family: $base-fonts;
+}
+
+.header-nav-link {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  @include at-least(tablet-portrait) {
+    font-size: 1.125rem;
+  }
+
+  @include at-least(tablet-landscape) {
+    font-size: 1.5rem;
+  }
+}
+
+.skip-link {
+  color: var(--color-text-primary);
+  text-decoration: none;
 }

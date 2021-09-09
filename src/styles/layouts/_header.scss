@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a11y-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
