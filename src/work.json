@@ -2,43 +2,43 @@
   "projects": [
     {
       "name": "Onward to Mathventure",
-      "description": "Built as a team, this adventure-inspired game for 3rd graders was our submission to The Odin Project's first ever game jam. It was built with Preact, and the month-long process proved to be a great experience in a team-based coding environment. We utilized classes to create objects throughout the game, and included over 150 questions that are randomly selected so that each playthrough includes a different set of questions.",
-      "images": ["image1", "image2"],
+      "description": "Built with a team using Preact, this adventure-inspired game for 3rd graders was our submission to The Odin Project's month-long game jam.",
+      "images": ["/public-assets/projects/mathventure-main.jpg"],
       "github": "https://github.com/thatblindgeye/spacejam",
       "demo": "https://thatblindgeye.itch.io/onward-to-mathventure"
     },
     {
       "name": "Enbious",
-      "description": "Built with React and React routers, and deployed to Netlify, this shopping cart app includes WAI-ARIA attributes that allows assistive technologies to announce page updates made via renders. This project included my first attempt with the useContext hook, which I utilized in order to share cart state across various nested levels of the app, and the useReducer hook, which I used to update the cart state itself. I also implemented logic to prevent adding more than an item's stock amount to the cart, which takes into account any amount already in the cart.",
-      "images": ["image1", "image2"],
+      "description": "Built with React and deployed to Netlify, this shopping cart app includes routing along with WAI-ARIA attributes that allows assistive technologies to announce page updates made via renders.",
+      "images": ["/public-assets/projects/enbious-main.jpg"],
       "github": "https://github.com/thatblindgeye/enbious",
       "demo": "https://enbious.netlify.app/"
     },
     {
       "name": "Memory-bender",
-      "description": "Built with React, this Avatar: The Last Airbender and Legend of Korra inspired game sets out to test your memory. The goal of the game is to only click images that have not yet been clicked. With each click, the cards are randomly shuffled and re-rendered, making the task all the more difficult.",
-      "images": ["image1", "image2"],
+      "description": "Built with React, this Avatar: The Last Airbender and Legend of Korra inspired game sets out to test your memory. The goal of the game is to click cards that have yet to be clicked, with the cards getting randomly shuffled each time.",
+      "images": ["/public-assets/projects/memorybender-main.jpg"],
       "github": "https://github.com/thatblindgeye/memory-bender",
       "demo": "https://thatblindgeye.github.io/memory-bender/"
     },
     {
       "name": "EZ-CV",
-      "description": "My first project built with React, I originally utilized class components and lifecycle methods before refactoring it to use functional components and hooks. This app includes meaningful error messages for all users, but especially users of assistive technologies, and features the ability to download the finished CV as a PDF via the react-pdf npm package.",
-      "images": ["image1", "image2"],
+      "description": "Built with React and using the react-pdf npm package, this CV generator includes meaningful error messages combined with WAI-ARIA attributes, and allows user to download the finished CV as a PDF.",
+      "images": ["/public-assets/projects/ezcv-main.jpg"],
       "github": "https://github.com/thatblindgeye/ez-cv",
       "demo": "https://thatblindgeye.github.io/ez-cv/"
     },
     {
       "name": "Weather A11y",
-      "description": "This weather tracking app was built with JavaScript, utilizing promises and async/await to fetch data for the entered location via the OpenWeather API or the user's location via the GeoLocation API. I included current, hourly, and 7 day forecasts as well as major weather alerts. A user's location is saved to local storage, quickly rendering weather for that location the next time the app refreshes. Semantic HTML was utilized to render weather data in tables, and WAI-ARIA live regions and attributes provide meaningful updates and errors.",
-      "images": ["image1", "image2"],
+      "description": "This weather tracking app was built with JavaScript and bundled with webpack, utilizing promises and async/await to fetch data for the entered location via the OpenWeather API or the user's location via the GeoLocation API. The most recent location gets saved to local storage, and WAI-ARIA attributes provide meaningful page updates and errors.",
+      "images": ["/public-assets/projects/weathera11y-main.jpg"],
       "github": "https://github.com/thatblindgeye/weather-a11y",
       "demo": "https://thatblindgeye.github.io/weather-a11y/"
     },
     {
       "name": "Will-Do",
-      "description": "A to-do list app built with JavaScript, users can create custom task groups as well as view tasks by their importance or due date. Tasks and groups are saved to local storage, so users will always have an up-to-date to-do list each time they reopen the app. I included the abiltiy to edit custom group names, delete custom groups, and delete all completed tasks from a group, the latter of which speeds up the task deletion process.",
-      "images": ["image1", "image2"],
+      "description": "A to-do list app built with JavaScript and bundled with webpack, users can create custom task groups as well as view tasks by their importance or due date. Tasks and groups get saved to local storage, and I included the abiltiy to delete all completed tasks from a group which speeds up the task deletion process.",
+      "images": ["/public-assets/projects/willdo-main.jpg"],
       "github": "https://github.com/thatblindgeye/weather-a11y",
       "demo": "https://thatblindgeye.github.io/weather-a11y/"
     }
@@ -47,12 +47,11 @@
     {
       "name": "The Odin Project",
       "link": "https://www.theodinproject.com",
-      "logo": null,
-      "description": "The Odin Project is an open source curriculum that teaches students how to program through web development.",
-      "list": [
-        "Spearheaded writing an accessibility section for the curriculum",
+      "description": "The Odin Project is an open source curriculum that empowers people to self-learn programming skills via web development.",
+      "accomplishments": [
+        "Spearheaded writing the accessibility section for the curriculum",
         "Aided in various other lesson rewrites/updates",
-        "Assisted other students on the Discord server on topics ranging from HTML and CSS to React"
+        "Assisted other members on the Discord server on topics ranging from HTML and CSS to React"
       ]
     }
   ]
