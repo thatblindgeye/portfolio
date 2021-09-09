@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Accessibility from './components/Accessibility/Accessibility';
 import HeaderNavbar from './components/Navigation/HeaderNavbar';
 import Router from './components/Router/Router';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
@@ -44,6 +45,7 @@ export default function App() {
         <HeaderNavbar />
       </header>
       <Router theme={theme} />
+      <Footer topRef={topOfPageRef} />
     </>
   );
 }
