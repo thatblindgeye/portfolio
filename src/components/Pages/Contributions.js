@@ -1,6 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import ContributionCard from '../Cards/ContribCard';
 import work from '../../work.json';
+
+function ContributionCard({ contribution }) {
+  const { name, link, description, accomplishments } = contribution;
+  return (
+    <div>
+      <a href={link}>{name}</a>
+      <div>{description}</div>
+      {accomplishments.length ? (
+        <ul>
+          {accomplishments.map((item, index) => {
+            return <li key={index}>{item}</li>;
+          })}
+        </ul>
+      ) : null}
+    </div>
+  );
+}
 
 export default function Contributions() {
   const [contributions, setContributions] = useState([]);
