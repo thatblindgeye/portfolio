@@ -1,11 +1,47 @@
 import React, { useEffect } from 'react';
 import Logo from '../Logo/Logo';
-import githubDark from '../../assets/images/logos/GitHub-White-Mark-64px.png';
-import githubLight from '../../assets/images/logos/GitHub-Black-Mark-64px.png';
-import linkedinDark from '../../assets/images/logos/linkedin-white.png';
-import linkedinLight from '../../assets/images/logos/linkedin-blue.png';
-import emailDark from '../../assets/images/icons/baseline_email_white_24dp.png';
-import emailLight from '../../assets/images/icons/baseline_email_black_24dp.png';
+import Contact from '../Contact/Contact';
+import { ReactComponent as WebIcon } from '../../assets/images/icons/web.svg';
+import { ReactComponent as ResponsiveIcon } from '../../assets/images/icons/responsive.svg';
+import { ReactComponent as AccessibleIcon } from '../../assets/images/icons/accessible.svg';
+
+function HomeCards() {
+  const cards = [
+    {
+      image: <WebIcon />,
+      title: 'Web Things',
+      text: 'I create a wide range of things, including a game jam project with a  team, a weather tracking web app, and a shopping cart React app.',
+    },
+    {
+      image: <ResponsiveIcon />,
+      title: 'Responsive Things',
+      text: 'I create things from a mobile-first approach, and ensure      responsiveness works from smart phone to desktop.',
+    },
+    {
+      image: <AccessibleIcon />,
+      title: 'Accessible Things',
+      text: 'I believe in creating things as accessible as possible to reach as wide an audience as possible by utilizing WAI-ARIA, semantic HTML, and the WCAG.',
+    },
+  ];
+
+  return (
+    <>
+      <div className='home-card-container'>
+        {cards.map((card, index) => {
+          const { image, title, text } = card;
+
+          return (
+            <section key={index} className='home-card'>
+              <div className='home-card__image'>{image}</div>
+              <h2 className='home-card__title'>{title}</h2>
+              <p className='home-card__text'>{text}</p>
+            </section>
+          );
+        })}
+      </div>
+    </>
+  );
+}
 
 export default function Home({ theme }) {
   useEffect(() => {
@@ -16,35 +52,14 @@ export default function Home({ theme }) {
     <div className='home-container'>
       <Logo />
       <div className='home-info'>
-        <p className='home-info__name'>Eric Olkowski</p>
-        <p className='home-info__title'>Front-End Developer</p>
-        <div className='home-info__contact'>
-          <a href='https://github.com/thatblindgeye'>
-            <img
-              className='contact-icon'
-              src={theme === 'dark' ? githubDark : githubLight}
-              alt='Github'
-            />
-          </a>
-          <a href='https://www.linkedin.com/in/ericolkowski/'>
-            <img
-              className='contact-icon'
-              src={theme === 'dark' ? linkedinDark : linkedinLight}
-              alt='LinkedIn'
-            />
-          </a>
-          <a href='mailto:ejo10488@gmail.com'>
-            <img
-              className='contact-icon'
-              src={theme === 'dark' ? emailDark : emailLight}
-              alt='Email'
-            />
-          </a>
+        <div className='home-info__personal-container'>
+          <h1 className='home-info__name'>Hello, World. I'm Eric Olkowski.</h1>
+          <Contact theme={theme} />
+          <p className='home-info__description'>
+            I'm a self-learned Front-End Developer that loves creating things.
+          </p>
         </div>
-        <p className='home-info__description'>
-          I develop things: web things, accessible things, responsive things.
-        </p>
-        <p className='home-info__pun'>N-eyes of you to stop by!</p>
+        <HomeCards />
       </div>
     </div>
   );
