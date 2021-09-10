@@ -8,7 +8,7 @@ import NoMatch from '../Pages/NoMatch';
 
 export default function Router({ theme }) {
   return (
-    <main id='main' aria-live='polite'>
+    <main id='content' aria-live='polite'>
       <Switch>
         <Route exact path='/'>
           <Home theme={theme} />

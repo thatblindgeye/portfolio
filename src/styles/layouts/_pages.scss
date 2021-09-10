@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.home-container {
+  display: grid;
+  gap: 50px;
+  grid-template-areas:
+    'logo'
+    'info'
+    'cards';
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+
+  @include at-least(desktop) {
+    gap: 100px 20px;
+    grid-template-areas:
+      'logo info'
+      'cards cards';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}

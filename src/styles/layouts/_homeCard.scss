@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.home-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: cards;
+
+  @include at-least(desktop) {
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.home-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+
+  @include at-least(tablet-portrait) {
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  @include at-least(desktop) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.home-card__image {
+  align-self: center;
+}

@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.logo-container {
+  align-self: center;
+  grid-area: logo;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+}
+
+.dice {
+  position: absolute;
+}

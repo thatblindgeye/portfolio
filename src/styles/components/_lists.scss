@@ -1,0 +1,12 @@
+.home-info .contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-icon {
+  height: calc(25px + 1vw);
+  max-height: 40px;
+}

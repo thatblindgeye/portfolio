@@ -33,8 +33,10 @@ function HomeCards() {
           return (
             <section key={index} className='home-card'>
               <div className='home-card__image'>{image}</div>
-              <h2 className='home-card__title'>{title}</h2>
-              <p className='home-card__text'>{text}</p>
+              <div className='home-card__info'>
+                <h2 className='home-card__title'>{title}</h2>
+                <p className='home-card__text'>{text}</p>
+              </div>
             </section>
           );
         })}
@@ -53,14 +55,17 @@ export default function Home({ theme }) {
       <Logo />
       <div className='home-info'>
         <div className='home-info__personal-container'>
-          <h1 className='home-info__name'>Hello, World. I'm Eric Olkowski.</h1>
-          <Contact theme={theme} />
-          <p className='home-info__description'>
+          <h1 className='home-info__intro'>
+            <div className='intro__top'>Hello, World.</div>
+            I'm Eric Olkowski.
+          </h1>
+          <p className='intro__description'>
             I'm a self-learned Front-End Developer that loves creating things.
           </p>
+          <Contact theme={theme} />
         </div>
-        <HomeCards />
       </div>
+      <HomeCards />
     </div>
   );
 }
