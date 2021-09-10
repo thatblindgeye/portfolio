@@ -14,6 +14,7 @@ body {
   &.menu-open {
     overflow-y: scroll;
     position: fixed;
+    inset: 0;
   }
 }
 
@@ -31,12 +32,8 @@ header {
 
   & .header-container {
     max-width: 1500px;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     width: 100%;
-
-    @include at-least(tablet-portrait) {
-      padding: 1rem 1.5rem;
-    }
   }
 }
 

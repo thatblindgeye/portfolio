@@ -1,32 +1,30 @@
 @use '../abstracts/' as *;
 
-.active-link {
-  border-bottom: 1px solid var(--color-border-primary);
-}
-
 .header-nav-link {
+  position: relative;
   display: inline-block;
   opacity: 0.75;
   width: 100%;
+
+  &::after {
+    content: '';
+    background-color: var(--color-link-focus);
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    position: absolute;
+    transition: width 200ms linear;
+    width: 0;
+  }
 
   &:focus,
   &:hover {
     opacity: 1;
 
-    & ~ .header-nav-link__border {
-      height: 2px;
+    &::after {
       width: 100%;
     }
   }
-}
-
-.header-nav-link__border {
-  background-color: var(--color-border-primary);
-  bottom: 0;
-  height: 0;
-  position: absolute;
-  transition: width 200ms linear;
-  width: 0;
 }
 
 .link {

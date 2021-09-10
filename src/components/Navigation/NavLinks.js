@@ -33,7 +33,6 @@ export default function NavLinks({ navClass, navLabel, closeMenu }) {
               >
                 {name}
               </Link>
-              <div className={`${navClass}-link__border`}></div>
             </li>
           );
         })}
