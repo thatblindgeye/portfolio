@@ -1,3 +1,10 @@
+@use '../abstracts/' as *;
+
+.contact__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .contact__link {
   &:focus {
     outline: 2px dotted var(--color-border-primary);
@@ -10,4 +17,13 @@
       transition: transform 100ms linear;
     }
   }
+}
+
+.home-info .contact__icon {
+  height: calc(25px + 1vw);
+  max-height: 40px;
+}
+
+.footer__nav .contact__icon {
+  height: 25px;
 }

@@ -1,5 +1,12 @@
 @use '../abstracts/' as *;
 
+.footer-nav-link {
+  &:focus {
+    outline: 1px dashed var(--color-border-primary);
+    outline-offset: 5px;
+  }
+}
+
 .header-nav-link {
   position: relative;
   display: inline-block;

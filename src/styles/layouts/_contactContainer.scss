@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-info .contact__list {
+  justify-content: center;
+  gap: 50px;
+
+  @include at-least(desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__nav .contact__list {
+  gap: 50px;
+}

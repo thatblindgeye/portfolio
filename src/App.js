@@ -47,7 +47,7 @@ export default function App() {
         </div>
       </header>
       <Router theme={theme} />
-      <Footer topRef={topOfPageRef} />
+      <Footer theme={theme} topRef={topOfPageRef} />
     </>
   );
 }
