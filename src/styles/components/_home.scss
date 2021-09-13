@@ -1,43 +1,9 @@
 @use '../abstracts/' as *;
 
-.home-container {
-  max-width: 1400px;
-}
-
 .home-info {
   grid-area: info;
 }
 
 .home-info .contact__container {
   margin-top: 50px;
-}
-
-.home-card {
-  border-radius: 25px;
-  padding: 20px;
-  width: min(100%, 300px);
-
-  @include at-least(tablet-portrait) {
-    width: min(100%, 500px);
-  }
-
-  @include at-least(desktop) {
-    width: min(100%, 350px);
-  }
-
-  & + .home-card {
-    margin-top: 50px;
-
-    @include at-least(desktop) {
-      margin-top: 0;
-    }
-  }
-}
-
-.home-card__image {
-  width: 100%;
-
-  @include at-least(desktop) {
-    width: 75%;
-  }
 }

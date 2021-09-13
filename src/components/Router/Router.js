@@ -9,15 +9,17 @@ import NoMatch from '../Pages/NoMatch';
 export default function Router({ theme }) {
   return (
     <main id='content' aria-live='polite'>
-      <Switch>
-        <Route exact path='/'>
-          <Home theme={theme} />
-        </Route>
-        <Route path='/projects' component={Projects} />
-        <Route path='/contributions' component={Contributions} />
-        <Route path='/about' component={About} />
-        <Route component={NoMatch} />
-      </Switch>
+      <div className='page-container'>
+        <Switch>
+          <Route exact path='/'>
+            <Home theme={theme} />
+          </Route>
+          <Route path='/projects' component={Projects} />
+          <Route path='/contributions' component={Contributions} />
+          <Route path='/about' component={About} />
+          <Route component={NoMatch} />
+        </Switch>
+      </div>
     </main>
   );
 }

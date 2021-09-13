@@ -12,7 +12,6 @@
   background-color: var(--color-btn-contained);
   border: 2px solid transparent;
   padding: 0.75rem 1rem;
-  transition: background-color linear 200ms, border linear 200ms;
 
   &:hover,
   &:focus {
@@ -28,7 +27,6 @@
   @extend .button;
   background-color: transparent;
   border: 1px solid transparent;
-  transition: border 200ms linear;
 
   &:focus,
   &:hover {
@@ -46,13 +44,14 @@
 .button-outline {
   @extend .button;
   background-color: transparent;
-  border: 1px solid var(--color-outline-btn);
+  border: 1px solid var(--color-btn-outline);
+  outline: 1px solid transparent;
   padding: 10px;
-  transition: transform 200ms linear, border 200ms linear;
 
   &:hover,
   &:focus {
-    border: 1px solid var(--color-outline-btn-focus);
+    border: 1px solid var(--color-btn-outline-focus);
+    outline: 1px solid var(--color-btn-outline-focus);
   }
 
   &:focus {

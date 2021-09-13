@@ -5,9 +5,19 @@ body {
   font-family: $base-fonts;
 }
 
+.button-contained,
+.button-outline,
 .button-text {
   color: var(--color-text-primary);
   font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.button-contained {
+  &:focus,
+  &:hover {
+    color: var(--color-text-btn-contained);
+  }
 }
 
 .footer-nav-link,
@@ -73,6 +83,14 @@ h1 {
 
   @include at-least(tablet-landscape) {
     font-size: 2rem;
+  }
+}
+
+.page__header {
+  text-align: center;
+
+  @include at-least(desktop) {
+    text-align: left;
   }
 }
 

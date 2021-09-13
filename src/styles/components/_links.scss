@@ -48,6 +48,15 @@
   }
 }
 
+.project__demo-link {
+  border-radius: 10px 0 0 10px;
+  padding: 5px 10px;
+}
+
+.project__github-link {
+  border-radius: 0 10px 10px 0;
+}
+
 .skip-link {
   border: 1px solid transparent;
   border-radius: 5px;

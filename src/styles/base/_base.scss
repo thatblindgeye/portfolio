@@ -43,6 +43,11 @@ main {
   padding: 2.5rem 1rem 5rem;
 }
 
+.page-container {
+  max-width: 1400px;
+  width: 100%;
+}
+
 footer {
   background: var(--color-bg-footer);
   padding: 2rem 1rem;

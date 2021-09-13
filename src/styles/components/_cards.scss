@@ -1,0 +1,52 @@
+@use '../abstracts/' as *;
+
+.card {
+  background-color: var(--color-bg-home-card);
+  border-radius: 10px;
+}
+
+.home-card {
+  padding: 20px;
+  width: min(100%, 300px);
+
+  @include at-least(tablet-portrait) {
+    width: min(100%, 500px);
+  }
+
+  @include at-least(desktop) {
+    width: min(100%, 350px);
+  }
+
+  & + .home-card {
+    margin-top: 50px;
+
+    @include at-least(desktop) {
+      margin-top: 0;
+    }
+  }
+}
+
+.home-card__image {
+  width: 100%;
+
+  @include at-least(desktop) {
+    width: 75%;
+  }
+}
+
+.project__card {
+  max-width: 640px;
+  padding: 25px;
+  width: 100%;
+}
+
+.project__image {
+  height: auto;
+  width: 100%;
+}
+
+.project__header {
+  @include at-least(tablet-portrait) {
+    margin-top: 25px;
+  }
+}
