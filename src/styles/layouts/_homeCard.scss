@@ -14,20 +14,18 @@
 }
 
 .home-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
+  background-color: var(--color-bg-home-card);
+  display: flex;
+  flex-direction: column;
   justify-items: center;
 
   @include at-least(tablet-portrait) {
-    gap: 20px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
+    gap: 10px;
+    flex-direction: row;
   }
 
   @include at-least(desktop) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    flex-direction: column;
   }
 }
 

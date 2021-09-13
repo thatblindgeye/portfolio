@@ -12,7 +12,7 @@
   justify-items: center;
 
   @include at-least(desktop) {
-    gap: 100px 20px;
+    gap: 125px 50px;
     grid-template-areas:
       'logo info'
       'cards cards';

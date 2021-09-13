@@ -1,0 +1,13 @@
+.contact__link {
+  &:focus {
+    outline: 2px dotted var(--color-border-primary);
+    outline-offset: 5px;
+  }
+
+  &:hover {
+    & .contact__icon {
+      transform: scale(1.125);
+      transition: transform 100ms linear;
+    }
+  }
+}

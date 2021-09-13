@@ -40,6 +40,14 @@ h1 {
   text-align: center;
 }
 
+.home-info__intro,
+.home-card__text,
+.intro__description {
+  @include at-least(desktop) {
+    text-align: left;
+  }
+}
+
 .intro__description {
   font-size: 1.5rem;
 

@@ -10,12 +10,12 @@ function HomeCards() {
     {
       image: <WebIcon />,
       title: 'Web Things',
-      text: 'I create a wide range of things, including a game jam project with a  team, a weather tracking web app, and a shopping cart React app.',
+      text: 'I create a range of things for the web, including an edutainment game with a team, helpful tracking and productivity apps, and React apps.',
     },
     {
       image: <ResponsiveIcon />,
       title: 'Responsive Things',
-      text: 'I create things from a mobile-first approach, and ensure      responsiveness works from smart phone to desktop.',
+      text: 'I create things from a mobile-first approach, and ensure apps are responsive from smart phone to desktop.',
     },
     {
       image: <AccessibleIcon />,
@@ -31,7 +31,7 @@ function HomeCards() {
           const { image, title, text } = card;
 
           return (
-            <section key={index} className='home-card'>
+            <section key={index} className='home-card elevation-06dp'>
               <div className='home-card__image'>{image}</div>
               <div className='home-card__info'>
                 <h2 className='home-card__title'>{title}</h2>
@@ -60,7 +60,7 @@ export default function Home({ theme }) {
             I'm Eric Olkowski.
           </h1>
           <p className='intro__description'>
-            I'm a self-learned Front-End Developer that loves creating things.
+            I'm a Front-End Developer that loves creating things.
           </p>
           <Contact theme={theme} />
         </div>

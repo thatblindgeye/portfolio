@@ -1,12 +1,19 @@
-.home-info .contact-list {
+@use '../abstracts/' as *;
+
+.home-info .contact__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 50px;
   list-style-type: none;
   padding-left: 0;
+
+  @include at-least(desktop) {
+    justify-content: flex-start;
+  }
 }
 
-.contact-icon {
+.home-info .contact__icon {
   height: calc(25px + 1vw);
   max-height: 40px;
 }

@@ -8,7 +8,12 @@
   grid-area: info;
 }
 
+.home-info .contact__container {
+  margin-top: 50px;
+}
+
 .home-card {
+  border-radius: 25px;
   padding: 20px;
   width: min(100%, 300px);
 
@@ -30,5 +35,9 @@
 }
 
 .home-card__image {
-  width: 75%;
+  width: 100%;
+
+  @include at-least(desktop) {
+    width: 75%;
+  }
 }
