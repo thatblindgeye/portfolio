@@ -9,13 +9,18 @@ const links = [
   { path: '/about', name: 'About' },
 ];
 
-export default function NavLinks({ navClass, navLabel, closeMenu }) {
+export default function NavLinks({ navClass, navLabel, closeMenu, topRef }) {
   const { pathname } = useLocation();
   const [activeLink, setActiveLink] = useState(pathname);
 
   useEffect(() => {
     setActiveLink(pathname);
   }, [pathname]);
+
+  // Determine whether to focus a menu button on mobile vs top of page on desktop
+  const handleLinkClick = () => {
+    closeMenu ? closeMenu() : topRef.current.focus();
+  };
 
   return (
     <nav className={navClass} aria-label={navLabel}>
@@ -29,7 +34,7 @@ export default function NavLinks({ navClass, navLabel, closeMenu }) {
                 className={`${navClass}-link ${
                   activeLink === path ? 'active-link' : ''
                 }`}
-                onClick={closeMenu}
+                onClick={handleLinkClick}
               >
                 {name}
               </Link>
