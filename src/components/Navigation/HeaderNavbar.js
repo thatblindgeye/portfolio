@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import NavLinks from './NavLinks';
 import MobileNav from './MobileNav';
 
-export default function HeaderNavbar() {
+export default function HeaderNavbar({ topRef }) {
   const [isMobile, setIsMobile] = useState(true);
   const [isHidden, setIsHidden] = useState(true);
   const openMenuRef = useRef(null);
@@ -92,6 +92,10 @@ export default function HeaderNavbar() {
       />
     </MobileNav>
   ) : (
-    <NavLinks navClass='header-nav' navLabel='main navigation' />
+    <NavLinks
+      navClass='header-nav'
+      navLabel='main navigation'
+      topRef={topRef}
+    />
   );
 }

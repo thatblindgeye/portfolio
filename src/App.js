@@ -43,7 +43,7 @@ export default function App() {
             themeToggle={handleThemeToggle}
             topOfPageRef={topOfPageRef}
           />
-          <HeaderNavbar />
+          <HeaderNavbar topRef={topOfPageRef} />
         </div>
       </header>
       <Router theme={theme} />
