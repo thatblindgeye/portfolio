@@ -22,7 +22,7 @@ export default function Contributions() {
   const [contributions, setContributions] = useState([]);
 
   useEffect(() => {
-    document.title = 'Contributions | thatblindgeye';
+    document.title = 'Contributions | Eric Olkowski';
   }, []);
 
   useEffect(() => {

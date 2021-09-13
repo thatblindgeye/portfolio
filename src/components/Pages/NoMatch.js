@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export default function NoMatch() {
   useEffect(() => {
-    document.title = 'Page Not Found | thatblindgeye';
+    document.title = 'Page Not Found | Eric Olkowski';
   }, []);
 
   return (

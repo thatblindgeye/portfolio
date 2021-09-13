@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 
 export default function About() {
   useEffect(() => {
-    document.title = 'About | thatblindgeye';
+    document.title = 'About | Eric Olkowski';
   }, []);
 
   return (
-    <div className='about-container'>
+    <>
       <h1>About Eric Olkowski</h1>
       <div>
         <img src='//unsplash.it/250' alt='' />
@@ -71,6 +71,6 @@ export default function About() {
         system based in the universe of the animated TV shows Avatar: The Last
         Airbender and The Legend of Korra.
       </p>
-    </div>
+    </>
   );
 }
