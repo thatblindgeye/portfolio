@@ -34,13 +34,16 @@
   }
 }
 
-.project__card {
+.project__card,
+.contribution__card {
   max-width: 640px;
   padding: 25px;
   width: 100%;
 }
 
 .project__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   height: auto;
   width: 100%;
 }
@@ -49,4 +52,8 @@
   @include at-least(tablet-portrait) {
     margin-top: 25px;
   }
+}
+
+.contribution__description {
+  margin: 15px 0;
 }

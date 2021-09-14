@@ -21,7 +21,20 @@
   }
 }
 
-.projects-container {
+.home-card-container {
+  grid-area: cards;
+}
+
+.home-info {
+  grid-area: info;
+}
+
+.logo-container {
+  grid-area: logo;
+}
+
+.projects-container,
+.contributions-container {
   display: flex;
   align-items: center;
   flex-direction: column;

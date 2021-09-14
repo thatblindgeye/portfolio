@@ -10,7 +10,7 @@ function ProjectCard({ project, projectIndex }) {
           return (
             <img
               key={index}
-              className='project__image elevation-04dp'
+              className='project__image elevation-08dp'
               src={`${process.env.PUBLIC_URL}${image}`}
               alt={name}
             />

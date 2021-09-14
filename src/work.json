@@ -45,13 +45,26 @@
   ],
   "contributions": [
     {
-      "name": "The Odin Project",
-      "link": "https://www.theodinproject.com",
-      "description": "The Odin Project is an open source curriculum that empowers people to self-learn programming skills via web development.",
+      "name": "Accessibility Lessons",
+      "link": "https://www.theodinproject.com/paths/full-stack-javascript/courses/html-and-css#accessibility",
+      "description": "Wrote several lessons on accessibility, meant to help those going through the open-source curriculum to start implementing accessibility with several important features, including:",
       "accomplishments": [
-        "Spearheaded writing the accessibility section for the curriculum",
-        "Aided in various other lesson rewrites/updates",
-        "Assisted other members on the Discord server on topics ranging from HTML and CSS to React"
+        "Why accessibility matters and benefits everyone",
+        "The importance of semantic HTML",
+        "How to use colors more accessibly",
+        "How to make a page accessible for keyboard navigation",
+        "Basic introduction to WAI-ARIA through ARIA labeling"
+      ]
+    },
+    {
+      "name": "Introductory CSS Lesson",
+      "link": "https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/css-foundations",
+      "description": "Wrote an introductory lesson on CSS as part of a complete rewrite of HTML and CSS sections. This lesson is meant to help people gain a basic understanding of several basic CSS topics, including:",
+      "accomplishments": [
+        "Adding CSS to HTML files",
+        "Class, ID, grouping, and descendant selectors",
+        "Several common CSS properties",
+        "The cascade, specificity, and inheritance"
       ]
     }
   ]

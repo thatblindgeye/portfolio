@@ -20,6 +20,24 @@ body {
   }
 }
 
+.contribution__description,
+.project__description {
+  font-size: 1.25rem;
+}
+
+.contribution__description,
+.project__description {
+  opacity: 0.8;
+}
+.contribution__list-item {
+  font-size: 1.125rem;
+}
+
+.contribution__name,
+.project__name {
+  font-size: 1.75rem;
+}
+
 .footer-nav-link,
 .header-nav-link {
   color: var(--color-text-primary);
@@ -83,6 +101,15 @@ h1 {
 
   @include at-least(tablet-landscape) {
     font-size: 2rem;
+  }
+}
+
+.link {
+  color: var(--color-text-primary);
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
   }
 }
 

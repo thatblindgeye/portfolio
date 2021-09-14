@@ -35,16 +35,9 @@
 }
 
 .link {
-  color: var(--color-text-primary);
-
   &:focus {
     outline: 2px dotted var(--color-border-primary);
-    outline-offset: 4px;
-    text-decoration: none;
-  }
-
-  &:hover {
-    text-decoration: none;
+    outline-offset: 5px;
   }
 }
 
