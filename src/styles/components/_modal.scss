@@ -1,5 +1,17 @@
 @use '../abstracts/' as *;
 
+.header-nav-container {
+  background-color: var(--color-bg-modal);
+  max-width: 250px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: right 200ms linear;
+  width: 90%;
+  z-index: 1;
+}
+
 .header-nav-mask {
   background-color: var(--color-bg-modal-mask);
   position: fixed;
@@ -14,18 +26,6 @@
 .hidden-mask {
   background-color: transparent;
   right: 100%;
-}
-
-.header-nav-container {
-  background-color: var(--color-bg-modal);
-  max-width: 250px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transition: right 200ms linear;
-  width: 90%;
-  z-index: 1;
 }
 
 .hidden-nav {

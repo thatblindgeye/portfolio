@@ -17,7 +17,7 @@ function ProjectCard({ project, projectIndex }) {
           );
         })}
       </div>
-      <div className='project__header'>
+      <div className='project__title'>
         <h2 id={`project-${projectIndex}`} className='project__name'>
           {name}
         </h2>

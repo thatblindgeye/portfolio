@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Skills from '../Skills/Skills';
+import aboutPhoto from '../../assets/images/about-photo.jpg';
 
 export default function About() {
   useEffect(() => {
@@ -16,8 +17,8 @@ export default function About() {
             <div className='about__side'>
               <div className='about__photo-container'>
                 <img
-                  className='about__photo elevation-04dp'
-                  src='//unsplash.it/250'
+                  className='about__photo elevation-02dp'
+                  src={aboutPhoto}
                   alt='Eric Olkowski'
                 />
               </div>

@@ -1,5 +1,41 @@
 @use '../abstracts/' as *;
 
+.about-container,
+.about__content,
+.about__side,
+.contributions-container,
+.projects-container,
+.skills__list {
+  display: flex;
+}
+
+.about-container,
+.contributions-container,
+.projects-container {
+  align-items: center;
+  flex-direction: column;
+  gap: 75px;
+  width: 100%;
+
+  @include at-least(desktop) {
+    align-items: flex-start;
+  }
+}
+
+.about__content {
+  flex-direction: column;
+  gap: 40px;
+
+  @include at-least(tablet-portrait) {
+    flex-direction: row;
+  }
+}
+
+.about__side {
+  flex-direction: column;
+  align-items: center;
+}
+
 .home-container {
   display: grid;
   gap: 50px;
@@ -33,38 +69,7 @@
   grid-area: logo;
 }
 
-.projects-container,
-.contributions-container,
-.about-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 75px;
-  width: 100%;
-
-  @include at-least(desktop) {
-    align-items: flex-start;
-  }
-}
-
-.about__content {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-
-  @include at-least(tablet-portrait) {
-    flex-direction: row;
-  }
-}
-
-.about__side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .skills__list {
-  display: flex;
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;

@@ -1,9 +1,5 @@
 @use '../abstracts/' as *;
 
-.home-info .contact__container {
-  margin-top: 50px;
-}
-
 .contact__list {
   list-style-type: none;
   padding-left: 0;
@@ -23,11 +19,15 @@
   }
 }
 
+.footer__nav .contact__icon {
+  height: 25px;
+}
+
+.home-info .contact__container {
+  margin-top: 50px;
+}
+
 .home-info .contact__icon {
   height: calc(25px + 1vw);
   max-height: 40px;
-}
-
-.footer__nav .contact__icon {
-  height: 25px;
 }

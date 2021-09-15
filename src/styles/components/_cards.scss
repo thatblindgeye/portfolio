@@ -5,6 +5,17 @@
   border-radius: 10px;
 }
 
+.contribution__card,
+.project__card {
+  max-width: 640px;
+  padding: 25px;
+  width: 100%;
+}
+
+.contribution__description {
+  margin: 15px 0;
+}
+
 .home-card {
   padding: 20px;
   width: min(100%, 300px);
@@ -34,11 +45,12 @@
   }
 }
 
-.project__card,
-.contribution__card {
-  max-width: 640px;
-  padding: 25px;
-  width: 100%;
+.project__image-container {
+  min-height: 150px;
+
+  @include at-least(tablet-portrait) {
+    min-height: 250px;
+  }
 }
 
 .project__image {
@@ -48,12 +60,8 @@
   width: 100%;
 }
 
-.project__header {
+.project__title {
   @include at-least(tablet-portrait) {
     margin-top: 25px;
   }
-}
-
-.contribution__description {
-  margin: 15px 0;
 }

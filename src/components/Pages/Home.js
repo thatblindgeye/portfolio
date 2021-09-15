@@ -31,7 +31,7 @@ function HomeCards() {
           const { image, title, text } = card;
 
           return (
-            <section key={index} className='home-card card elevation-06dp'>
+            <section key={index} className='home-card card elevation-01dp'>
               <div className='home-card__image'>{image}</div>
               <div className='home-card__info'>
                 <h2 className='home-card__title'>{title}</h2>

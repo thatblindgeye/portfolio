@@ -6,12 +6,14 @@ export default function NoMatch() {
   }, []);
 
   return (
-    <div>
-      <h1>Page Not Found</h1>
-      <p>
-        Sorry, this page doesn't exist. Although, if it doesn't exist, then how
-        am I telling you this...
-      </p>
-    </div>
+    <>
+      <h1 className='page__header'>Page Not Found</h1>
+      <div className='no-match-container'>
+        <p>
+          Sorry, this page doesn't exist. Although, if it doesn't exist, then
+          how am I telling you this...
+        </p>
+      </div>
+    </>
   );
 }

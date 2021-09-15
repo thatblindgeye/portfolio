@@ -1,14 +1,22 @@
+@use '../abstracts/' as *;
+
 .about__main p:first-of-type {
   margin-top: 0;
 }
 
 .about__photo-container {
-  height: 200px;
-  width: 200px;
+  min-height: 200px;
+  min-width: 200px;
 }
 
 .about__photo {
+  border-radius: 50%;
+  height: auto;
   width: 100%;
+}
+
+.about__pronouns {
+  margin-top: 10px;
 }
 
 .about__section {

@@ -1,5 +1,16 @@
 @use '../abstracts' as *;
 
+.about__main,
+.contribution__description,
+.project__description {
+  font-size: 1.25rem;
+}
+
+.about__pronouns {
+  font-style: italic;
+  text-align: center;
+}
+
 .about__skill-icon {
   font-size: 3rem;
 }
@@ -7,19 +18,9 @@
 .about__title,
 .home-info__intro,
 .home-card__title,
-.home-card__text,
 .intro__description,
 .page__header {
   text-align: center;
-}
-
-.home-info__intro,
-.home-card__text,
-.intro__description,
-.page__header {
-  @include at-least(desktop) {
-    text-align: left;
-  }
 }
 
 .about__title {
@@ -35,9 +36,16 @@ body {
 
 .button-contained,
 .button-outline,
+.button-text,
+.contribution__list-item,
+.home-card__text {
+  font-size: 1.125rem;
+}
+
+.button-contained,
+.button-outline,
 .button-text {
   color: var(--color-text-primary);
-  font-size: 1.125rem;
   text-decoration: none;
 }
 
@@ -48,22 +56,9 @@ body {
   }
 }
 
-.about__main,
-.contribution__description,
-.project__description {
-  font-size: 1.25rem;
-}
-
-.about__pronouns {
-  font-style: italic;
-}
-
 .contribution__description,
 .project__description {
   opacity: 0.8;
-}
-.contribution__list-item {
-  font-size: 1.125rem;
 }
 
 .footer-nav-link,
@@ -79,7 +74,19 @@ body {
 }
 
 .footer__pun {
-  opacity: 0.87;
+  font-size: 1.125rem;
+}
+
+h1 {
+  @include at-least(tablet-portrait) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  @include at-least(tablet-portrait) {
+    font-size: 1.75rem;
+  }
 }
 
 .header-nav-link {
@@ -95,21 +102,16 @@ body {
   }
 }
 
-h1 {
-  @include at-least(tablet-portrait) {
-    font-size: 3.5rem;
-  }
-}
-
-h2 {
-  @include at-least(tablet-portrait) {
-    font-size: 1.75rem;
+.home-card__text,
+.home-info__intro,
+.intro__description,
+.page__header {
+  @include at-least(desktop) {
+    text-align: left;
   }
 }
 
 .home-card__text {
-  font-size: 1.125rem;
-
   @include at-least(desktop) {
     font-size: 1.25rem;
   }
