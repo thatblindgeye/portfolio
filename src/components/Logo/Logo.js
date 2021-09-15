@@ -3,6 +3,7 @@ import { ReactComponent as EyeLogo } from '../../assets/images/logos/eye20-empty
 import { ReactComponent as D20 } from '../../assets/images/logos/d20.svg';
 
 export default function Logo() {
+  // eslint-disable-next-line no-unused-vars
   const [dice, setDice] = useState(20);
   const [roll, setRoll] = useState(null);
 
