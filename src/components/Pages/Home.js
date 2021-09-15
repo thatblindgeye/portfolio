@@ -10,7 +10,7 @@ function HomeCards() {
     {
       image: <WebIcon />,
       title: 'Web Things',
-      text: 'I create a range of things for the web, including an edutainment game with a team, helpful tracking and productivity apps, and React apps.',
+      text: 'I create a range of things for the web, including games that require coded logic, helpful tracking and productivity apps, and React apps.',
     },
     {
       image: <ResponsiveIcon />,
@@ -20,7 +20,7 @@ function HomeCards() {
     {
       image: <AccessibleIcon />,
       title: 'Accessible Things',
-      text: 'I believe in creating things as accessible as possible to reach as wide an audience as possible by utilizing WAI-ARIA, semantic HTML, and the WCAG.',
+      text: 'I create things as accessible as possible to reach as wide an audience as possible by utilizing WAI-ARIA and semantic HTML, as well as referencing the WCAG.',
     },
   ];
 

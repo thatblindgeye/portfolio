@@ -27,15 +27,16 @@ export default function About() {
             <div className='about__main'>
               <p>
                 I'm a Front-End Developer that is dedicated to creating websites
-                and apps that are accessible, responsive, and semantically
-                correct.
+                and apps that are as accessible, responsive, and semantically
+                correct as possible.
               </p>
               <p>
-                I was born with an eye disease called Retinitis Pigmentosa.
-                While not completely blind, the disease has affected my night
-                and peripheral vision, as well as caused deteriorating vision
-                loss over the years. I'm not just an advocate for web
-                accessibility, I personally rely on and benefit from it.
+                I was born with an eye disease called Retinitis Pigmentosa,
+                which has affected my night and peripheral vision, and has
+                caused deteriorating vision loss overall. While not completely
+                blind currently, I began using the "thatblindgeye" moniker in
+                social media and other mediums as a means of overcoming the
+                power I used to feel the disease had over me.
               </p>
               <p>
                 In September 2020, I started my journey to become a developer by
@@ -73,8 +74,8 @@ export default function About() {
                   Aid other members on The Odin Project's Discord server
                 </li>
                 <li className='about__list-item'>
-                  Enjoy reading books on programming, including You Don't Know
-                  JavaScript Yet
+                  Enjoy reading and learning from books on programming,
+                  including You Don't Know JavaScript Yet
                 </li>
                 <li className='about__list-item'>
                   Play and run TTRPG's such as Dungeons & Dragons, including
@@ -90,16 +91,16 @@ export default function About() {
           <div className='about__content'>
             <div className='about__main'>
               <p>
-                Whenever someone asked,{' '}
+                Whenever someone used to ask,{' '}
                 <q>where do you see yourself in X years?</q>, my response would
-                tend to be in a "I hope to..." tone. My passion for being a
-                developer, if not confirmed by anything else, is confirmed by
-                how I can now answer this question.
+                tend to be in an "I hope to be..." tone. Since starting my
+                journey to become a developer, I'm able to answer this sort of
+                question with complete confidence.
               </p>
 
               <p>
-                I'm going to become Full-Stack Developer as well as further help
-                others implement accessibility in their own work.
+                I'm going to become a Full-Stack Developer, as well as further
+                help others implement accessibility in their own work.
               </p>
             </div>
           </div>
