@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import work from '../../work.json';
 
 function ProjectCard({ project, projectIndex }) {
   const { name, description, images, github, demo } = project;
   return (
-    <div className='project__card card elevation-06dp'>
+    <div className='project__card card elevation-01dp'>
       <div className='project__image-container'>
         {images.map((image, index) => {
           return (
             <img
               key={index}
-              className='project__image elevation-08dp'
+              className='project__image elevation-02dp'
               src={`${process.env.PUBLIC_URL}${image}`}
               alt={name}
             />
@@ -46,14 +46,10 @@ function ProjectCard({ project, projectIndex }) {
 }
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
+  const projects = work.projects;
 
   useEffect(() => {
     document.title = 'Projects | Eric Olkowski';
-  }, []);
-
-  useEffect(() => {
-    setProjects(work.projects);
   }, []);
 
   return (

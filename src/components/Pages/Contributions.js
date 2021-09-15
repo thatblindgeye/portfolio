@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import work from '../../work.json';
 
 function ContributionCard({ contribution }) {
   const { name, link, description, accomplishments } = contribution;
   return (
-    <div className='contribution__card card elevation-06dp'>
+    <div className='contribution__card card elevation-01dp'>
       <h2 className='contribution__name'>
         <a className='link' href={link}>
           {name}
@@ -27,14 +27,10 @@ function ContributionCard({ contribution }) {
 }
 
 export default function Contributions() {
-  const [contributions, setContributions] = useState([]);
+  const contributions = work.contributions;
 
   useEffect(() => {
     document.title = 'Contributions | Eric Olkowski';
-  }, []);
-
-  useEffect(() => {
-    setContributions(work.contributions);
   }, []);
 
   return (
