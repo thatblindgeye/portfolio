@@ -2,13 +2,17 @@ import React, { useEffect } from 'react';
 import work from '../../work.json';
 
 function ContributionCard({ contribution }) {
-  const { name, link, description, accomplishments } = contribution;
+  const { name, contributee, link, description, accomplishments } =
+    contribution;
   return (
     <div className='contribution__card card elevation-01dp'>
       <h2 className='contribution__name'>
         <a className='link' href={link}>
           {name}
         </a>
+        {contributee ? (
+          <div className='contribution__contributee'>{contributee}</div>
+        ) : null}
       </h2>
       <div className='contribution__description'>{description}</div>
       {accomplishments.length ? (
