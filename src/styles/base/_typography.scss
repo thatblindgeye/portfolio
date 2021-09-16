@@ -61,6 +61,15 @@ body {
   opacity: 0.8;
 }
 
+.dice__result {
+  font-size: 3rem;
+  color: black;
+
+  @include at-least(tablet-portrait) {
+    font-size: 5rem;
+  }
+}
+
 .footer-nav-link,
 .header-nav-link {
   color: var(--color-text-primary);

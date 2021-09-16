@@ -10,7 +10,7 @@ function HomeCards() {
     {
       image: <WebIcon />,
       title: 'Web Things',
-      text: 'I create a range of things for the web, including games that require coded logic, helpful tracking and productivity apps, and React apps.',
+      text: 'I create a range of things for the web, including games that require coded logic, helpful tracking and productivity apps, and React apps (including this portfolio!).',
     },
     {
       image: <ResponsiveIcon />,

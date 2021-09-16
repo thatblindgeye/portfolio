@@ -1,56 +1,37 @@
 @use '../abstracts/' as *;
 
-.dice,
-.dice__result {
-  position: absolute;
-}
-
-.dice__result {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
-  color: black;
-}
-
-.dice,
-.dice__roll {
-  transition: transform 200ms linear;
-}
-
-.dice__rolled {
-  animation-name: roll-dice;
-  animation-direction: alternate;
-  animation-duration: 500ms;
-  animation-fill-mode: both;
-}
-
-.dice__select {
-  width: max-content;
+.dice {
+  transition: width 200ms linear;
+  width: 50%;
 }
 
 .logo-button {
   background-color: transparent;
   border: none;
-  max-width: 600px;
-  position: relative;
-  width: 100%;
+  height: 60%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
 
   &:focus {
-    outline: 2px dotted var(--color-border-primary);
+    outline: 3px dotted var(--color-border-dice-roller);
+    outline-offset: 5px;
   }
 
   &:hover {
     cursor: pointer;
 
     & .dice {
-      transform: scale(1.1);
+      width: 60%;
     }
   }
 }
 
 .logo-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
 }

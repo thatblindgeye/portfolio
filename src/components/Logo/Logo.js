@@ -8,28 +8,41 @@ export default function Logo() {
   const [roll, setRoll] = useState(null);
 
   const handleDiceRoll = (e) => {
-    e.stopPropagation();
     const randomNumber = Math.floor(Math.random() * dice + 1);
 
     setRoll(randomNumber);
   };
 
+  const handleDiceChange = (e) => {
+    const newSize = Number(e.target.dataset.size);
+
+    setDice(newSize);
+  };
+
   return (
-    <div className='logo-container'>
-      <button
-        className='logo-button'
-        onClick={handleDiceRoll}
-        tabIndex='0'
-        aria-label='Roll the d20'
-      >
-        {!roll ? (
-          <D20 aria-hidden='true' />
-        ) : (
-          <div aria-label={`You rolled ${roll}`} className='dice__result'>
-            {roll}
-          </div>
-        )}
+    <div className='dice-roll-container'>
+      <div className='logo-container'>
+        <button
+          className='logo-button'
+          onClick={handleDiceRoll}
+          tabIndex='0'
+          aria-label='Roll the d20'
+        >
+          {!roll ? (
+            <D20 aria-hidden='true' />
+          ) : (
+            <div aria-label={`You rolled ${roll}`} className='dice__result'>
+              {roll}
+            </div>
+          )}
+        </button>
         <EyeLogo aria-hidden='true' />
+      </div>
+      <button onClick={handleDiceChange} data-size='4'>
+        d4
+      </button>
+      <button onClick={handleDiceChange} data-size='6'>
+        d6
       </button>
     </div>
   );
