@@ -1,9 +1,22 @@
 import React, { useState } from 'react';
 import { ReactComponent as EyeLogo } from '../../assets/images/logos/eye20-empty.svg';
-import { ReactComponent as D20 } from '../../assets/images/logos/d20.svg';
+import { ReactComponent as D20 } from '../../assets/images/dice/d20.svg';
+import { ReactComponent as D12 } from '../../assets/images/dice/d12.svg';
+import { ReactComponent as D4 } from '../../assets/images/dice/d4.svg';
+import { ReactComponent as D6 } from '../../assets/images/dice/d6.svg';
+import { ReactComponent as D8 } from '../../assets/images/dice/d8.svg';
+import { ReactComponent as D10 } from '../../assets/images/dice/d10.svg';
+
+const dieIcons = {
+  4: <D4 />,
+  6: <D6 />,
+  8: <D8 />,
+  10: <D10 />,
+  12: <D12 />,
+  20: <D20 />,
+};
 
 export default function Logo() {
-  // eslint-disable-next-line no-unused-vars
   const [dice, setDice] = useState(20);
   const [roll, setRoll] = useState(null);
 
@@ -26,10 +39,10 @@ export default function Logo() {
           className='logo-button'
           onClick={handleDiceRoll}
           tabIndex='0'
-          aria-label='Roll the d20'
+          aria-label={`Roll a ${dice} sided die`}
         >
           {!roll ? (
-            <D20 aria-hidden='true' />
+            dieIcons[dice]
           ) : (
             <div aria-label={`You rolled ${roll}`} className='dice__result'>
               {roll}
@@ -38,12 +51,20 @@ export default function Logo() {
         </button>
         <EyeLogo aria-hidden='true' />
       </div>
-      <button onClick={handleDiceChange} data-size='4'>
-        d4
-      </button>
-      <button onClick={handleDiceChange} data-size='6'>
-        d6
-      </button>
+      <div className='dice-buttons-container'>
+        {Object.keys(dieIcons).map((die, index) => {
+          return (
+            <button
+              className='button-contained'
+              key={index}
+              onClick={handleDiceChange}
+              data-size={die}
+            >
+              d{die}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
