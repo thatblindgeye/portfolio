@@ -30,6 +30,7 @@ export default function Logo() {
     const newSize = Number(e.target.dataset.size);
 
     setDice(newSize);
+    setRoll(null);
   };
 
   return (
