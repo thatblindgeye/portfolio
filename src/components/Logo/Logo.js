@@ -16,6 +16,26 @@ const dieIcons = {
   20: <D20 />,
 };
 
+function DiceSelector({ changeDice }) {
+  return (
+    <div className='dice-buttons-container'>
+      {Object.entries(dieIcons).map((die, index) => {
+        return (
+          <button
+            className={`button--die-select  button--d${die[0]}`}
+            key={index}
+            onClick={changeDice}
+            aria-label={`Select a ${die[0]} sided die`}
+            data-size={die[0]}
+          >
+            {die[1]}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function Logo() {
   const [dice, setDice] = useState(20);
   const [roll, setRoll] = useState(null);
@@ -27,7 +47,8 @@ export default function Logo() {
   };
 
   const handleDiceChange = (e) => {
-    const newSize = Number(e.target.dataset.size);
+    const newSize = Number(e.currentTarget.dataset.size);
+    e.currentTarget.classList.add('testing');
 
     setDice(newSize);
     setRoll(null);
@@ -37,9 +58,8 @@ export default function Logo() {
     <div className='dice-roll-container'>
       <div className='logo-container'>
         <button
-          className='logo-button'
+          className='button--dice-roller'
           onClick={handleDiceRoll}
-          tabIndex='0'
           aria-label={`Roll a ${dice} sided die`}
         >
           {!roll ? (
@@ -52,20 +72,7 @@ export default function Logo() {
         </button>
         <EyeLogo aria-hidden='true' />
       </div>
-      <div className='dice-buttons-container'>
-        {Object.keys(dieIcons).map((die, index) => {
-          return (
-            <button
-              className='button-contained'
-              key={index}
-              onClick={handleDiceChange}
-              data-size={die}
-            >
-              d{die}
-            </button>
-          );
-        })}
-      </div>
+      <DiceSelector changeDice={handleDiceChange} />
     </div>
   );
 }

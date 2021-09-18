@@ -1,4 +1,4 @@
-@use '../abstracts/mixins' as *;
+@use '../abstracts' as *;
 
 .button {
   border-radius: 10px;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.button-contained {
+.button--contained {
   @extend .button;
   background-color: var(--color-btn-contained);
   border: 2px solid transparent;
@@ -23,7 +23,7 @@
   }
 }
 
-.button-delete {
+.button--delete {
   @extend .button;
   background-color: transparent;
   border: 1px solid transparent;
@@ -34,14 +34,75 @@
   }
 }
 
-.button-icon {
+.button--dice-roller {
+  background-color: transparent;
+  border: none;
+  height: 60%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+
+  &:focus {
+    outline: 3px dotted var(--color-border-dice-roller);
+    outline-offset: 5px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & .dice {
+      width: 60%;
+    }
+  }
+
+  & > .dice {
+    transition: width 200ms linear;
+    width: 50%;
+    fill: black;
+    stroke: white;
+    stroke-width: 0.1px;
+  }
+}
+
+.button--die-select {
+  background-color: transparent;
+  border: none;
+  opacity: $low-emphasis;
+  padding: 0;
+  transition: transform 200ms linear;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: 2px dotted var(--color-border-primary);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  > .dice {
+    fill: transparent;
+    stroke: var(--color-border-primary);
+    stroke-width: 0.5px;
+    width: clamp(25px, 10vw, 50px);
+  }
+}
+
+.button--icon {
   --base-size: 1.5rem;
 
   height: var(--base-size);
   width: var(--base-size);
 }
 
-.button-outline {
+.button--outline {
   @extend .button;
   background-color: transparent;
   border: 1px solid var(--color-btn-outline);
@@ -59,7 +120,7 @@
   }
 }
 
-.button-text {
+.button--text {
   @extend .button;
   background-color: transparent;
   border: 1px solid transparent;
@@ -72,7 +133,7 @@
   }
 }
 
-.nav-button {
+.button--nav {
   background-color: transparent;
   border: 1px solid transparent;
   color: var(--color-text-primary);
@@ -87,7 +148,7 @@
   }
 }
 
-.nav-button__icon {
+.button--nav__icon {
   height: max(1.5rem, 40px);
   width: max(1.5rem, 40px);
 }
