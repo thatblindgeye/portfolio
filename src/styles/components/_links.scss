@@ -2,7 +2,7 @@
 
 .footer-nav-link {
   &:focus {
-    outline: 1px dashed var(--color-border-primary);
+    outline: 2px dotted var(--color-border-primary);
     outline-offset: 5px;
   }
 }

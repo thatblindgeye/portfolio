@@ -14,7 +14,7 @@ export default function Footer({ theme, topRef }) {
   return (
     <footer>
       <div className='footer__nav'>
-        <button className='button-text' onClick={handleScrollToTop}>
+        <button className='button--text' onClick={handleScrollToTop}>
           Back to Top
         </button>
         <NavLinks

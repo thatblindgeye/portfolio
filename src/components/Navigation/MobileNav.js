@@ -12,12 +12,12 @@ export default function MobileNav({
   return (
     <>
       <button
-        className='nav-button'
+        className='button--nav'
         aria-label='open navigation menu'
         onClick={toggleMenu}
         ref={openMenuRef}
       >
-        <MenuIcon className='nav-button__icon' />
+        <MenuIcon className='button--nav__icon' />
       </button>
 
       <div className={`header-nav-mask ${hidden ? 'hidden-mask' : ''}`}></div>
@@ -26,14 +26,14 @@ export default function MobileNav({
           hidden ? 'hidden-nav' : ''
         }`}
       >
-        <div className='nav-button-container'>
+        <div className='button--nav-container'>
           <button
-            className='nav-button'
+            className='button--nav'
             aria-label='close navigation menu'
             onClick={toggleMenu}
             ref={closeMenuRef}
           >
-            <CloseIcon className='nav-button__icon' />
+            <CloseIcon className='button--nav__icon' />
           </button>
         </div>
         {children}

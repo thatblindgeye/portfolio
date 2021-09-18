@@ -34,22 +34,22 @@ body {
   font-family: $base-fonts;
 }
 
-.button-contained,
-.button-outline,
-.button-text,
+.button--contained,
+.button--outline,
+.button--text,
 .contribution__list-item,
 .home-card__text {
   font-size: 1.125rem;
 }
 
-.button-contained,
-.button-outline,
-.button-text {
+.button--contained,
+.button--outline,
+.button--text {
   color: var(--color-text-primary);
   text-decoration: none;
 }
 
-.button-contained {
+.button--contained {
   &:focus,
   &:hover {
     color: var(--color-text-btn-contained);

@@ -24,7 +24,7 @@ function ProjectCard({ project, projectIndex }) {
         <div className='project__link-container'>
           <a
             id={`demo-${projectIndex}`}
-            className='button-contained project__demo-link'
+            className='button--contained project__demo-link'
             aria-labelledby={`project-${projectIndex} demo-${projectIndex}`}
             href={demo}
           >
@@ -32,7 +32,7 @@ function ProjectCard({ project, projectIndex }) {
           </a>
           <a
             id={`github-${projectIndex}`}
-            className='button-outline project__github-link'
+            className='button--outline project__github-link'
             aria-labelledby={`project-${projectIndex} github-${projectIndex}`}
             href={github}
           >
