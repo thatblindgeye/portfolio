@@ -51,6 +51,33 @@ export default function Contributions() {
                         />
                     );
                 })}
+                <div className='contribution__card card elevation--01dp'>
+                    <h2 className='contribution__name'>
+                        Additional Contributions
+                    </h2>
+
+                    <ul className='contribution__list'>
+                        <li className='contribution__list-item'>
+                            Conducted an accessibility audit and opened issues
+                            for the{' '}
+                            <a
+                                className='link'
+                                href='https://github.com/hhhrrrttt222111/developer-portfolio'
+                            >
+                                Developer Portfolio
+                            </a>{' '}
+                            and{' '}
+                            <a
+                                className='link'
+                                href='https://github.com/yashchaudhari008/drawit'
+                            >
+                                Drawit
+                            </a>{' '}
+                            repositories, in addition to submitting PR's to fix
+                            some of the issues, as part of Hacktoberfest 2021.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </>
     );
