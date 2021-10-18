@@ -1,73 +1,73 @@
 {
-  "projects": [
-    {
-      "name": "Onward to Mathventure",
-      "description": "Built with a team using Preact, this adventure-inspired game for 3rd graders was our submission to The Odin Project's month-long game jam.",
-      "images": ["/public-assets/projects/mathventure-main.jpg"],
-      "github": "https://github.com/thatblindgeye/spacejam",
-      "demo": "https://thatblindgeye.itch.io/onward-to-mathventure"
-    },
-    {
-      "name": "Enbious",
-      "description": "Built with React and deployed to Netlify, this shopping cart app includes routing along with WAI-ARIA attributes that allows assistive technologies to announce page updates made via renders.",
-      "images": ["/public-assets/projects/enbious-main.jpg"],
-      "github": "https://github.com/thatblindgeye/enbious",
-      "demo": "https://enbious.netlify.app/"
-    },
-    {
-      "name": "Memory-bender",
-      "description": "Built with React, this Avatar: The Last Airbender and Legend of Korra inspired game sets out to test your memory. The goal of the game is to click cards that have yet to be clicked, with the cards getting randomly shuffled each time.",
-      "images": ["/public-assets/projects/memorybender-main.jpg"],
-      "github": "https://github.com/thatblindgeye/memory-bender",
-      "demo": "https://thatblindgeye.github.io/memory-bender/"
-    },
-    {
-      "name": "EZ-CV",
-      "description": "Built with React and using the react-pdf npm package, this CV generator includes meaningful error messages combined with WAI-ARIA attributes, and allows user to download the finished CV as a PDF.",
-      "images": ["/public-assets/projects/ezcv-main.jpg"],
-      "github": "https://github.com/thatblindgeye/ez-cv",
-      "demo": "https://thatblindgeye.github.io/ez-cv/"
-    },
-    {
-      "name": "Weather A11y",
-      "description": "This weather tracking app was built with JavaScript and bundled with webpack, utilizing promises and async/await to fetch data for the entered location via the OpenWeather API or the user's location via the GeoLocation API. The most recent location gets saved to local storage, and WAI-ARIA attributes provide meaningful page updates and errors.",
-      "images": ["/public-assets/projects/weathera11y-main.jpg"],
-      "github": "https://github.com/thatblindgeye/weather-a11y",
-      "demo": "https://thatblindgeye.github.io/weather-a11y/"
-    },
-    {
-      "name": "Will-Do",
-      "description": "A to-do list app built with JavaScript and bundled with webpack, users can create custom task groups as well as view tasks by their importance or due date. Tasks and groups get saved to local storage, and I included the ability to delete all completed tasks from a group which speeds up the task deletion process.",
-      "images": ["/public-assets/projects/willdo-main.jpg"],
-      "github": "https://github.com/thatblindgeye/weather-a11y",
-      "demo": "https://thatblindgeye.github.io/weather-a11y/"
-    }
-  ],
-  "contributions": [
-    {
-      "name": "Accessibility Lessons",
-      "contributee": "The Odin Project",
-      "link": "https://www.theodinproject.com/paths/full-stack-javascript/courses/html-and-css#accessibility",
-      "description": "Wrote several lessons on accessibility, meant to help those going through the open-source curriculum to start implementing accessibility with several important features, including:",
-      "accomplishments": [
-        "Why accessibility matters and benefits everyone",
-        "The importance of semantic HTML",
-        "How to use colors more accessibly",
-        "How to make a page accessible for keyboard navigation",
-        "Basic introduction to WAI-ARIA through ARIA labeling"
-      ]
-    },
-    {
-      "name": "Introductory CSS Lesson",
-      "contributee": "The Odin Project",
-      "link": "https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/css-foundations",
-      "description": "Wrote an introductory lesson on CSS as part of a complete rewrite of HTML and CSS sections. This lesson is meant to help people gain a basic understanding of several basic CSS topics, including:",
-      "accomplishments": [
-        "Adding CSS to HTML files",
-        "Class, ID, grouping, and descendant selectors",
-        "Several common CSS properties",
-        "The cascade, specificity, and inheritance"
-      ]
-    }
-  ]
+    "projects": [
+        {
+            "name": "Onward to Mathventure",
+            "description": "Built with a team using Preact, this adventure-inspired game for 3rd graders was our submission to The Odin Project's month-long game jam.",
+            "images": ["/public-assets/projects/mathventure-main.jpg"],
+            "github": "https://github.com/thatblindgeye/spacejam",
+            "demo": "https://thatblindgeye.itch.io/onward-to-mathventure"
+        },
+        {
+            "name": "Enbious",
+            "description": "Built with React and deployed to Netlify, this shopping cart app includes routing along with WAI-ARIA attributes that allows assistive technologies to announce page updates made via renders.",
+            "images": ["/public-assets/projects/enbious-main.jpg"],
+            "github": "https://github.com/thatblindgeye/enbious",
+            "demo": "https://enbious.netlify.app/"
+        },
+        {
+            "name": "Memory-bender",
+            "description": "Built with React, this Avatar: The Last Airbender and Legend of Korra inspired game sets out to test your memory. The goal of the game is to click cards that have yet to be clicked, with the cards getting randomly shuffled each time.",
+            "images": ["/public-assets/projects/memorybender-main.jpg"],
+            "github": "https://github.com/thatblindgeye/memory-bender",
+            "demo": "https://thatblindgeye.github.io/memory-bender/"
+        },
+        {
+            "name": "EZ-CV",
+            "description": "Built with React and using the react-pdf npm package, this CV generator includes meaningful error messages combined with WAI-ARIA attributes, and allows user to download the finished CV as a PDF.",
+            "images": ["/public-assets/projects/ezcv-main.jpg"],
+            "github": "https://github.com/thatblindgeye/ez-cv",
+            "demo": "https://thatblindgeye.github.io/ez-cv/"
+        },
+        {
+            "name": "Weather A11y",
+            "description": "This weather tracking app was built with JavaScript and bundled with webpack, utilizing promises and async/await to fetch data for the entered location via the OpenWeather API or the user's location via the GeoLocation API. The most recent location gets saved to local storage, and WAI-ARIA attributes provide meaningful page updates and errors.",
+            "images": ["/public-assets/projects/weathera11y-main.jpg"],
+            "github": "https://github.com/thatblindgeye/weather-a11y",
+            "demo": "https://thatblindgeye.github.io/weather-a11y/"
+        },
+        {
+            "name": "Will-Do",
+            "description": "A to-do list app built with JavaScript and bundled with webpack, users can create custom task groups as well as view tasks by their importance or due date. Tasks and groups get saved to local storage, and I included the ability to delete all completed tasks from a group which speeds up the task deletion process.",
+            "images": ["/public-assets/projects/willdo-main.jpg"],
+            "github": "https://github.com/thatblindgeye/weather-a11y",
+            "demo": "https://thatblindgeye.github.io/weather-a11y/"
+        }
+    ],
+    "contributions": [
+        {
+            "name": "Accessibility Lessons",
+            "contributee": "The Odin Project",
+            "link": "https://www.theodinproject.com/paths/full-stack-javascript/courses/html-and-css#accessibility",
+            "description": "Wrote several lessons on accessibility, meant to help those going through the open-source curriculum to start implementing accessibility with several important features, including:",
+            "accomplishments": [
+                "Why accessibility matters and benefits everyone",
+                "The importance of semantic HTML",
+                "How to use colors more accessibly",
+                "How to make a page accessible for keyboard navigation",
+                "Basic introduction to WAI-ARIA through ARIA labeling"
+            ]
+        },
+        {
+            "name": "Introductory CSS Lesson",
+            "contributee": "The Odin Project",
+            "link": "https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/css-foundations",
+            "description": "Wrote an introductory lesson on CSS as part of a complete rewrite of HTML and CSS sections. This lesson is meant to help people gain a basic understanding of several basic CSS topics, including:",
+            "accomplishments": [
+                "Adding CSS to HTML files",
+                "Class, ID, grouping, and descendant selectors",
+                "Several common CSS properties",
+                "The cascade, specificity, and inheritance"
+            ]
+        }
+    ]
 }

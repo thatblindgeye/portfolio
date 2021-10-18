@@ -6,71 +6,71 @@
 .contributions-container,
 .projects-container,
 .skills__list {
-  display: flex;
+    display: flex;
 }
 
 .about-container,
 .contributions-container,
 .projects-container {
-  align-items: center;
-  flex-direction: column;
-  gap: 75px;
-  width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 75px;
+    width: 100%;
 
-  @include at-least(desktop) {
-    align-items: flex-start;
-  }
+    @include at-least(desktop) {
+        align-items: flex-start;
+    }
 }
 
 .about__content {
-  flex-direction: column;
-  gap: 40px;
+    flex-direction: column;
+    gap: 40px;
 
-  @include at-least(tablet-portrait) {
-    flex-direction: row;
-  }
+    @include at-least(tablet-portrait) {
+        flex-direction: row;
+    }
 }
 
 .about__side {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .home-container {
-  display: grid;
-  gap: 50px;
-  grid-template-areas:
-    'logo'
-    'info'
-    'cards';
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-  justify-items: center;
-
-  @include at-least(desktop) {
-    gap: 125px 50px;
+    display: grid;
+    gap: 50px;
     grid-template-areas:
-      'logo info'
-      'cards cards';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-  }
+        'logo'
+        'info'
+        'cards';
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+
+    @include at-least(desktop) {
+        gap: 125px 50px;
+        grid-template-areas:
+            'logo info'
+            'cards cards';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
 }
 
 .home-card-container {
-  grid-area: cards;
+    grid-area: cards;
 }
 
 .home-info {
-  grid-area: info;
+    grid-area: info;
 }
 
-.logo-container {
-  grid-area: logo;
+.dice-roll-container {
+    grid-area: logo;
 }
 
 .skills__list {
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 }
