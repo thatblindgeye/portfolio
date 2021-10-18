@@ -3,16 +3,16 @@
 .about__main,
 .contribution__description,
 .project__description {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .about__pronouns {
-  font-style: italic;
-  text-align: center;
+    font-style: italic;
+    text-align: center;
 }
 
 .about__skill-icon {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .about__title,
@@ -20,130 +20,130 @@
 .home-card__title,
 .intro__description,
 .page__header {
-  text-align: center;
+    text-align: center;
 }
 
 .about__title {
-  @include at-least(tablet-portrait) {
-    text-align: left;
-  }
+    @include at-least(tablet-portrait) {
+        text-align: left;
+    }
 }
 
 body {
-  color: var(--color-text-primary);
-  font-family: $base-fonts;
+    color: var(--color-text-primary);
+    font-family: $base-fonts;
 }
 
 .button--contained,
 .button--outline,
 .button--text,
-.contribution__list-item,
+.list-item--bullet,
 .home-card__text {
-  font-size: 1.125rem;
+    font-size: 1.125rem;
 }
 
 .button--contained,
 .button--outline,
 .button--text {
-  color: var(--color-text-primary);
-  text-decoration: none;
+    color: var(--color-text-primary);
+    text-decoration: none;
 }
 
 .button--contained {
-  &:focus,
-  &:hover {
-    color: var(--color-text-btn-contained);
-  }
+    &:focus,
+    &:hover {
+        color: var(--color-text-btn-contained);
+    }
 }
 
 .contribution__description,
 .project__description {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .dice__result {
-  font-size: 3rem;
-  color: black;
+    font-size: 3rem;
+    color: black;
 
-  @include at-least(tablet-portrait) {
-    font-size: 5rem;
-  }
+    @include at-least(tablet-portrait) {
+        font-size: 5rem;
+    }
 }
 
 .footer-nav-link,
 .header-nav-link {
-  color: var(--color-text-primary);
+    color: var(--color-text-primary);
 }
 
 .footer-nav-link {
-  &:focus,
-  &:hover {
-    text-decoration: none;
-  }
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .footer__pun {
-  font-size: 1.125rem;
+    font-size: 1.125rem;
 }
 
 h1 {
-  @include at-least(tablet-portrait) {
-    font-size: 3.5rem;
-  }
+    @include at-least(tablet-portrait) {
+        font-size: 3.5rem;
+    }
 }
 
 h2 {
-  @include at-least(tablet-portrait) {
-    font-size: 1.75rem;
-  }
+    @include at-least(tablet-portrait) {
+        font-size: 1.75rem;
+    }
 }
 
 .header-nav-link {
-  font-size: 1.5rem;
-  text-decoration: none;
-
-  @include at-least(tablet-portrait) {
-    font-size: 1.125rem;
-  }
-
-  @include at-least(tablet-landscape) {
     font-size: 1.5rem;
-  }
+    text-decoration: none;
+
+    @include at-least(tablet-portrait) {
+        font-size: 1.125rem;
+    }
+
+    @include at-least(tablet-landscape) {
+        font-size: 1.5rem;
+    }
 }
 
 .home-card__text,
 .home-info__intro,
 .intro__description,
 .page__header {
-  @include at-least(desktop) {
-    text-align: left;
-  }
+    @include at-least(desktop) {
+        text-align: left;
+    }
 }
 
 .home-card__text {
-  @include at-least(desktop) {
-    font-size: 1.25rem;
-  }
+    @include at-least(desktop) {
+        font-size: 1.25rem;
+    }
 }
 
 .intro__description {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 
-  @include at-least(tablet-landscape) {
-    font-size: 2rem;
-  }
+    @include at-least(tablet-landscape) {
+        font-size: 2rem;
+    }
 }
 
 .link {
-  color: var(--color-text-primary);
+    color: var(--color-text-primary);
 
-  &:focus,
-  &:hover {
-    text-decoration: none;
-  }
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .skip-link {
-  color: var(--color-text-primary);
-  text-decoration: none;
+    color: var(--color-text-primary);
+    text-decoration: none;
 }

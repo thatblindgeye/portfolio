@@ -1,15 +1,16 @@
+.about__list,
 .contribution__list {
-  padding-left: 15px;
+    padding-left: 15px;
 }
 
-.contribution__list-item {
-  + .contribution__list-item {
-    margin-top: 10px;
-  }
+.list-item--bullet {
+    + .list-item--bullet {
+        margin-top: 10px;
+    }
 }
 
 .skills__list {
-  list-style-type: none;
-  padding: 20px;
-  margin: 0;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
 }

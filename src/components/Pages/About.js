@@ -81,16 +81,16 @@ export default function About() {
                                 I also:{' '}
                             </p>
                             <ul className='about__list'>
-                                <li className='about__list-item'>
+                                <li className='list-item--bullet'>
                                     Aid other members on The Odin Project's
                                     Discord server
                                 </li>
-                                <li className='about__list-item'>
+                                <li className='list-item--bullet'>
                                     Enjoy reading and learning from books on
                                     programming, including You Don't Know
                                     JavaScript Yet
                                 </li>
-                                <li className='about__list-item'>
+                                <li className='list-item--bullet'>
                                     Play and run TTRPG's such as Dungeons &
                                     Dragons, including homebrew content I
                                     created based on the animated TV shows

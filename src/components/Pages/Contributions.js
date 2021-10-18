@@ -21,7 +21,7 @@ function ContributionCard({ contribution }) {
                 <ul className='contribution__list'>
                     {accomplishments.map((item, index) => {
                         return (
-                            <li key={index} className='contribution__list-item'>
+                            <li key={index} className='list-item--bullet'>
                                 {item}
                             </li>
                         );
@@ -57,7 +57,7 @@ export default function Contributions() {
                     </h2>
 
                     <ul className='contribution__list'>
-                        <li className='contribution__list-item'>
+                        <li className='list-item--bullet'>
                             Conducted an accessibility audit and opened issues
                             for the{' '}
                             <a
