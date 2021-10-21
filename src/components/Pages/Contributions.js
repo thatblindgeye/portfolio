@@ -75,6 +75,9 @@ export default function Contributions() {
                             </a>{' '}
                             repositories, in addition to submitting PR's to fix
                             some of the issues, as part of Hacktoberfest 2021.
+                            This process included looking into the documentation
+                            for and utilizing styled-components, Material-UI,
+                            and P5.js.
                         </li>
                     </ul>
                 </div>
