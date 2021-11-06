@@ -4,7 +4,7 @@
             "name": "Onward to Mathventure",
             "description": "Built with a team using Preact, this adventure-inspired game for 3rd graders was our submission to The Odin Project's month-long game jam.",
             "images": ["/public-assets/projects/mathventure-main.jpg"],
-            "github": "https://github.com/thatblindgeye/spacejam",
+            "github": "https://github.com/thatblindgeye/mathventure",
             "demo": "https://thatblindgeye.itch.io/onward-to-mathventure"
         },
         {
@@ -39,8 +39,8 @@
             "name": "Will-Do",
             "description": "A to-do list app built with JavaScript and bundled with webpack, users can create custom task groups as well as view tasks by their importance or due date. Tasks and groups get saved to local storage, and I included the ability to delete all completed tasks from a group which speeds up the task deletion process.",
             "images": ["/public-assets/projects/willdo-main.jpg"],
-            "github": "https://github.com/thatblindgeye/weather-a11y",
-            "demo": "https://thatblindgeye.github.io/weather-a11y/"
+            "github": "https://github.com/thatblindgeye/todo-list",
+            "demo": "https://thatblindgeye.github.io/todo-list/"
         }
     ],
     "contributions": [
