@@ -1,7 +1,7 @@
-@use 'breakpoints' as *;
-@use 'functions' as *;
-@use 'colors' as *;
-
+@use "breakpoints" as *;
+@use "functions" as *;
+@use "colors" as *;
+$themes: null !default;
 /*
  * @include at-least(size: string)
  * The string passed in can either be from the breakpoints map in
@@ -41,12 +41,7 @@
   word-spacing: $word-spacing;
 }
 
-@mixin flex(
-  $direction: row,
-  $justify: center,
-  $align: center,
-  $wrap: no-wrap
-) {
+@mixin flex($direction: row, $justify: center, $align: center, $wrap: no-wrap) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
