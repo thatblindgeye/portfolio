@@ -1,4 +1,6 @@
 $themes: [] !default;
+$theme-values: {} !default;
+
 @use "breakpoints" as *;
 @use "functions" as *;
 @use "colors" as *;
