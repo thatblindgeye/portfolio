@@ -1,0 +1,12 @@
+version: 1
+
+build:
+  env:
+    node_verison: 16
+    NODE_OPTIONS: "--openssl-legacy-provider"
+
+  install: "npm install"
+  command: "npm run build"
+
+deploy:
+  entrypoint: "build"
