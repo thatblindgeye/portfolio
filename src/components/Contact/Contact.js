@@ -10,7 +10,7 @@ import emailLight from "../../assets/images/icons/email_black_24dp.png";
 export default function Contact({ theme }) {
   const contacts = [
     {
-      url: "https://github.com/thatblindgeye",
+
       icon: theme === "dark" ? githubDark : githubLight,
       alt: "GitHub",
     },
