@@ -10,7 +10,7 @@ export default function Accessibility({
   return (
     <div className='a11y-container'>
       <a href='#content' className='skip-link' ref={topOfPageRef}>
-        Skip to Content
+        Skip to Main Content
       </a>
       <div
         role='checkbox'
