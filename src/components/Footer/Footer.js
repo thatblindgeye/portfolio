@@ -5,7 +5,7 @@ import Contact from '../Contact/Contact';
 export default function Footer({ theme, topRef }) {
   const handleScrollToTop = () => {
     window.scrollTo({
-      top: 0,
+      top: 10,
     });
 
     topRef.current.focus();
